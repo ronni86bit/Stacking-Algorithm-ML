@@ -1,7 +1,5 @@
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
-
-# Accuracy results from all models
 model_accuracies = {
     "Logistic Regression": 0.9333,
     "K-Nearest Neighbors": 0.9333,
@@ -13,13 +11,9 @@ model_accuracies = {
     "Voting Classifier": 0.9667,
     "Stacking Classifier": 0.9667
 }
-
-# Print results
 print("\n🔹 Final Model Accuracy Comparison 🔹")
 for model, acc in model_accuracies.items():
     print(f"{model}: {acc:.4f}")
-
-# Print conclusion
 print("\n🔹 Conclusion 🔹")
 print("")
 print("- Decision Tree & SVM performed best among basic models (96.67%).")
